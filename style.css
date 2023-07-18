@@ -11,6 +11,13 @@
     color: #0B0223;
 }
 
+.text-p{
+    font-size: 15px;
+    color: #534C64;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
 .gamer-g{
     color: #FF42A5;
 }
@@ -19,6 +26,29 @@
     margin-right: 5px;
 }
 
+.btn-linear{
+    border-radius: 48px;
+    background: #FF42A5;
+    padding: .5rem 1.2rem;
+    border: none;
+    color: #FFF;
+    transition: .4s;
+}
+.btn-linear:hover{
+    background-color: #a41e63;
+}
+
+.btn-aqua{
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: .5rem 1.2rem;
+    border: none;
+    color: #FFF;
+    transition: .4s;
+}
+.btn-aqua:hover{
+    background-color: #226683;
+}
 /*------------ herader style start here ---------------*/
 .nav-container{
     display: flex;
@@ -55,10 +85,31 @@
     padding: 10px;
     font-size: 12px;
 }
-
-
 /*------------ herader style start here ---------------*/
 
+
+/*------------ banner style start here ---------------*/
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 7rem;
+}
+
+.banner-img img{
+    width: 400px;
+    height: 100%;
+}
+.banner-title>h1{
+    font-size: 2.4rem;
+    color: #662dac;
+    margin: 5px 0;
+}
+
+.banner-btn>.btn-linear{
+    margin-right: 10px;
+}
+/*------------ banner style end here ---------------*/
 
 
 
@@ -78,8 +129,21 @@
     .nav-body>ul{
         gap: 1rem;
     }
-    .nav-title{
+    .nav-title, .banner-img{
         margin-bottom: 1rem;
+        
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .banner-container{
+        padding: 1rem 2rem;
     }
 }
 
