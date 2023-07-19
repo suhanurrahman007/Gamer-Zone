@@ -49,6 +49,11 @@
 .btn-aqua:hover{
     background-color: #226683;
 }
+
+.logo{
+    width: 2.6rem;
+    height: 1.1rem;
+}
 /*------------ herader style start here ---------------*/
 .nav-container{
     display: flex;
@@ -132,6 +137,7 @@
     border-radius: 8px;
     transition: .4s;
 }
+
 .card:hover{
     transform: scale(1.05,1.05);
 }
@@ -150,6 +156,56 @@
 .online-game-title{
     text-align: center;
     margin-bottom: 1.4rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(0, 0, 0, 0.502);
+  border-radius: 8px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.watch-p{
+    font-size: 20px;
+    margin-left: 6rem;
+    color: #ee8fc0;
+    font-weight: bolder;
+}
+.user:hover {
+  color: #eee;
 }
 /*------------ Online Game style end here ---------------*/
 
