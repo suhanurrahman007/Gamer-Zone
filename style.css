@@ -57,6 +57,10 @@
     padding: 1rem 7rem;
     background-color: rgb(247, 247, 239);
 }
+.nav-title{
+    justify-content: center;
+    align-items: center;
+}
 
 .nav-body ul{
     display: flex;
@@ -224,6 +228,62 @@
 /*------------ Game button style end here ---------------*/
 
 
+/*------------ Footer style start here ---------------*/
+.footer-container{
+    text-align: center;
+    background-color: #0B0223;
+    color: #FFF;
+    padding: 3rem;
+    margin-top: 1rem;
+}
+
+.footer-title{
+    justify-content: center;
+    align-items: center;
+}
+
+.f-icon{
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.f-icon:hover{
+    transform: scale(1.2,1.2);
+    color: rgb(244, 121, 76);
+}
+
+.f-icon:first-child{
+    margin-left: 0;
+}
+
+.footer-icon-name ul{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem 0;
+}
+
+.footer-setting-name ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+}
+
+.footer-copy p{
+    
+    margin: 1rem 0;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 12px;
+}
+/*------------ Footer style end here ---------------*/
 
 
 
@@ -300,13 +360,36 @@
         height: 160px;
     }
 
+    .game-btn-container{
+    padding: 1rem;
+    grid-template-columns: repeat(3,1fr);
 }
 
-/* .game-btn-container{
-    padding: 1rem;
+.footer-icon-name ul,
+.footer-icon
+{
     display: grid;
-    grid-template-columns: auto auto auto;
-} */
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+
+.footer-setting-name ul
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-copy p{
+    margin: 0 4rem;
+    font-size: 10px;
+}
+
+}
 
 /*------------- Tablet Responsive Style ---------- */
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -333,15 +416,29 @@
     .play-game-title{
         text-align: start;
     }
+
+    .play-game-title p{
+        width: 15rem;
+    }
     .play-game-img{
         margin-right: 5px;
     }
 
-    /* .game-btn-container{
+    .game-btn-container{
         padding: 3rem;
-        display: grid;
-        grid-template-columns: auto auto auto;
-    } */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-icon-name ul,
+    .footer-icon,
+    .footer-setting-name ul
+    {
+        font-size: 12px;
+    }
+
+    .footer-copy p{
+    font-size: 9px;
+}
 }
 
 /*------------ Responsive style start here ---------------*/
