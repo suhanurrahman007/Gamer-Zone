@@ -106,9 +106,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 7rem;
+    padding: .5rem 3rem;
+
 }
 
+.banner-title{
+    /* background-color: #4EC5F7; */
+    width: 40%;
+    padding: 4rem;
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner-img{
+    margin-right: 3rem;
+}
 
 .banner-img img{
     width: 400px;
@@ -388,6 +402,13 @@
         padding: 5px;
     }
 
+    .banner-img{
+        margin-right: 0;
+    }
+
+    .banner-title{
+        width: 60%;
+    }
     .online-game{
         padding: 2rem;
     }
@@ -470,6 +491,14 @@
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .banner-container{
         padding: 1rem 2rem;
+    }
+
+    .banner-img{
+        margin-right: 0;
+    }
+
+    .banner-title{
+        padding: 1rem;
     }
 
     .card-container{
